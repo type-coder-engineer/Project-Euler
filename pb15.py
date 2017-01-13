@@ -24,7 +24,7 @@ def bfs_all_path(row, column):
             
     return nb_path
 
-    # 使用顶点和算法，花费0秒
+    # 使用顶点和算法，花费0.033秒
 def solve():
     row = 20
     column = 20
