@@ -1,6 +1,5 @@
 #coding: utf
 import time
-import math
 
 def sum_divisors(nb):
     sum = 0
