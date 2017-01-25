@@ -11,7 +11,10 @@ def solve():
         else:
             pass
     return 'no answer'
-    
+
+def myPermutations():
+
+
 if __name__ == '__main__':
     start = time.time()
     print "The answer is {}".format(solve())
