@@ -13,14 +13,14 @@ def det(index):
     circle_nb = 1 
     while(1):
         # print circle_nb
-        myUnit = unit(circle_nb)
-        index -= 10 * (myUnit + 1)
+        myDigit = digit(circle_nb)
+        index -= 10 * (myDigit + 1)
         if index <= 0:
-            return find_nb(index + 10 * (myUnit + 1), circle_nb, myUnit)
+            return find_nb(index + 10 * (myDigit + 1), circle_nb, myDigit)
         else:
             circle_nb += 1
         
-def unit(nb):
+def digit(nb):
     i = 1
     while(1):
         if nb - 10 ** i < 0:
@@ -28,9 +28,9 @@ def unit(nb):
         else:
             i += 1
 
-def find_nb(index, circle_nb, unit):
-    count = index // (unit + 1) - 1
-    rest = index % (unit + 1)
+def find_nb(index, circle_nb, digit):
+    count = index // (digit + 1) - 1
+    rest = index % (digit + 1)
     if rest == 0:
         return count
     else:
