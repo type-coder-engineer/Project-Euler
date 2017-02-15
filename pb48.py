@@ -2,11 +2,12 @@
 import time
 
 def solve():
-    sum = 0
-    for i in xrange(1, 1001):
-        print i
-        sum += i**i
-    return str(sum)[-10:]
+    # sum = 0
+    # for i in xrange(1, 1001):
+        # print i
+        # sum += i**i
+    # return str(sum)[-10:]
+    return str(sum(i**i for i in xrange(1, 1001)))[-10:]
     
 if __name__ == '__main__':
     start = time.time()
